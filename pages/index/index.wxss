@@ -16,6 +16,17 @@
   color: #aaa;
 }
 
-.usermotto {
-  margin-top: 200px;
+.number {
+  color: #FF6633;
+}
+
+.motto {
+  color: #666666;
+  margin: 30rpx;
+  align-items: center;
+}
+.topimage {
+  left: 0px;
+  top: 0px;
+  width: 750rpx;
 }

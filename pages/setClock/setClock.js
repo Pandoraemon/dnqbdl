@@ -1,13 +1,34 @@
 // pages/setClock/setClock.js
-Page({
+const date = new Date()
+const hours = []
+const minutes = []
 
+for (let i = 3; i <= 8; i++) {
+  hours.push(i)
+}
+
+for (let i = 0; i <= 59; i++) {
+  minutes.push(i)
+}
+Page({
+  
   /**
    * 页面的初始数据
    */
   data: {
-  
+    tomorrow : date.toLocaleDateString(),
+    hours : hours,
+    minutes : minutes,
+    value : [9999, 1, 1],
   },
 
+  bindChange: function (e) {
+    const val = e.detail.value
+    this.setData({
+      hour: this.data.hours[val[0]],
+      minute: this.data.minutes[val[1]],
+    })
+  },
   /**
    * 生命周期函数--监听页面加载
    */

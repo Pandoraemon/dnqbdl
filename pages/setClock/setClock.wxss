@@ -1,1 +1,11 @@
 /* pages/setClock/setClock.wxss */
+.text {
+  font-size: 10 rpx;
+  color: #999999;
+}
+
+.pay-button{
+  width: 700rpx;
+  height: 300rpx; 
+  margin: auto;
+}

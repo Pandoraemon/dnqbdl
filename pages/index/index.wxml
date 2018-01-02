@@ -13,6 +13,5 @@
   <view>
     <button type="primary" bindtap="toSetClock">我也要玩</button>
   </view>
-  
 </view>
 

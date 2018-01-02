@@ -12,6 +12,11 @@ Page({
     money: "1280",
   },
   //事件处理函数
+  toSetClock: function(){
+    wx.navigateTo({
+      url: '../setClock/setClock',
+    })
+  },
   bindViewTap: function() {
     wx.navigateTo({
       url: '../logs/logs'

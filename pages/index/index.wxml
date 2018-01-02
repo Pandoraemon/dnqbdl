@@ -11,7 +11,7 @@
     <image class="center" mode="aspectFit" src="../../images/index/u24.png"></image>
   </view>
   <view>
-    <button type="primary">我起得来</button>
+    <button type="primary" bindtap="toSetClock">我也要玩</button>
   </view>
   
 </view>

@@ -22,11 +22,21 @@
 
 .motto {
   color: #666666;
-  margin: 30rpx;
-  align-items: center;
+  margin: auto;
+  padding-top: 100rpx;
+  padding-left: 30rpx;
+  padding-right: 30rpx;
+  padding-bottom: 0rpx;
 }
+
 .topimage {
-  left: 0px;
-  top: 0px;
+  left: 0rpx;
+  top: 0rpx;
   width: 750rpx;
+}
+
+.center {
+  width: 700rpx;
+  height: 300rpx; 
+  margin: auto;
 }

@@ -16,5 +16,5 @@
   </view>
 </view>
 <view class="pay-button">
-    <button type="primary" bindtap="toSetClock">￥9.9 赌自己起得来</button>
+    <button type="primary" bindtap="pay">￥9.9 赌自己起得来</button>
 </view>

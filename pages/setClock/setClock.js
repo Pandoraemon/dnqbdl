@@ -1,5 +1,6 @@
 // pages/setClock/setClock.js
 const date = new Date()
+const tomorrow = date.setDate(date.getDate() + 1)
 const hours = []
 const minutes = []
 
@@ -27,6 +28,20 @@ Page({
     this.setData({
       hour: this.data.hours[val[0]],
       minute: this.data.minutes[val[1]],
+    })
+  },
+
+  pay: function () {
+    wx.requestPayment({
+      'timeStamp': '',
+      'nonceStr': '',
+      'package': '',
+      'signType': 'MD5',
+      'paySign': '',
+      'success': function (res) {
+      },
+      'fail': function (res) {
+      }
     })
   },
   /**

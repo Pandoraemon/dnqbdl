@@ -32,17 +32,24 @@ Page({
   },
 
   pay: function () {
-    wx.requestPayment({
-      'timeStamp': '',
-      'nonceStr': '',
-      'package': '',
-      'signType': 'MD5',
-      'paySign': '',
-      'success': function (res) {
-      },
-      'fail': function (res) {
-      }
+    wx.setStorage({
+      key: 'paied',
+      data: true,
     })
+    wx.redirectTo({
+      url: 'index',
+    })
+    // wx.requestPayment({
+    //   'timeStamp': '',
+    //   'nonceStr': '',
+    //   'package': '',
+    //   'signType': 'MD5',
+    //   'paySign': '',
+    //   'success': function (res) {
+    //   },
+    //   'fail': function (res) {
+    //   }
+    // })
   },
   /**
    * 生命周期函数--监听页面加载

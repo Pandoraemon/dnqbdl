@@ -11,7 +11,10 @@
     <image class="center" mode="aspectFit" src="../../images/index/u24.png"></image>
   </view>
   <view>
-    <button type="primary" bindtap="toSetClock">我也要玩</button>
+    <navigator url='setClock'>
+      <button type="primary">我也要玩</button>
+    </navigator>
+    
   </view>
 </view>
 
